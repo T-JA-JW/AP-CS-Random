@@ -2,21 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Grouping Tool</title>
-    <link rel="stylesheet" href="style.css"> <!-- Optional -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f2f2f7;
+            text-align: center;
+        }
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        #results {
+            margin-top: 20px;
+            text-align: left;
+            display: inline-block;
+        }
+        .group {
+            background-color: #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h2>Student Grouping Tool</h2>
 
-        <button onclick="chooseOne()">Choose 1 Student</button>
-        <button onclick="groupStudents(2)">Arrange into Groups of 2</button>
-        <button onclick="groupStudents(3)">Arrange into Groups of 3</button>
+<h2>Student Grouping Tool</h2>
 
-        <div id="result"></div>
-    </div>
+<button onclick="chooseOne()">Choose 1 Student</button>
+<button onclick="groupStudents(2)">Arrange into Groups of 2</button>
+<button onclick="groupStudents(3)">Arrange into Groups of 3</button>
 
-    <script src="script.js"></script>
+<div id="results"></div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
